@@ -1,10 +1,10 @@
-const Gtk = imports.gi.Gtk;
+const Gtk = imports.gi.Gtk
 
-import GtkComponent from '../GtkComponent';
+import GtkComponent from '../GtkComponent'
 
 export default class ScrolledWindow extends GtkComponent {
-  createNewNode() {
-    return new Gtk.ScrolledWindow();
+  createNewNode () {
+    return new Gtk.ScrolledWindow()
   }
 }
 

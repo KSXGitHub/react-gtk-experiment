@@ -1,17 +1,17 @@
-const Gtk = imports.gi.Gtk;
+import GtkComponent from '../GtkComponent'
 
-import GtkComponent from '../GtkComponent';
+const Gtk = imports.gi.Gtk
 
 export default class TextView extends GtkComponent {
-  createNewNode() {
-    return new Gtk.TextView();
+  createNewNode () {
+    return new Gtk.TextView()
   }
 
-  setProp(prop, value) {
+  setProp (prop, value) {
     if (prop === 'text') {
-      this.node.buffer.text = value;
+      this.node.buffer.text = value
     } else {
-      super.setProp(prop, value);
+      super.setProp(prop, value)
     }
   }
 }

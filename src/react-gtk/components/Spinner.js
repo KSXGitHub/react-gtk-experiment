@@ -2,9 +2,9 @@ import GtkComponent from '../GtkComponent'
 
 const Gtk = imports.gi.Gtk
 
-export default class Button extends GtkComponent {
+export default class Spinner extends GtkComponent {
   createNewNode () {
-    return new Gtk.Button()
+    return new Gtk.Spinner()
   }
 }
 
